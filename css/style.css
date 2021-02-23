@@ -1,0 +1,33 @@
+/*body {
+background-image: url("../images/main.jpg");
+background-repeat: no-repeat;
+ max-width: 100%;
+    height: auto;
+    background-position: top;
+
+}*/
+/*#main-container{
+  margin-top: 10%;
+  background-color: rgba(217, 229, 220,0.5);
+}*/
+#add-button{
+  float: right;
+}
+#modalWindow>.modal-dialog{
+      margin-top: 15%;
+}
+#btn-delete, #btn-edit, #btn-apply{
+
+		margin-right: 5px;
+}
+/*#btn-edit{
+ background-color: yellow;}
+#btn-delete{
+ background-color: red;
+} */
+
+#btn-apply{
+	background-color: lightgreen;
+}
+
+

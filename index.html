@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Buy list</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+		<div id="main-container" class="container">
+			<h1>TODO LIST - shopping</h1>
+			<br>
+			<div class="table-responsive">
+
+			<table id="task-table" class="table table-hover table-condensed">
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>What to buy</th>
+        <th>Quantity</th>
+		<th>Modify</th>
+      </tr>
+    </thead>
+    <tbody id="task-table-body">
+ <!--     <tr class="active">
+        <td><input type="checkbox" name="" value=""></td>
+        <td>Milk</td>
+        <td>1</td>
+		<td>
+          <button type="button" name="button" disabled onclick="editTask(this);" >&#9997;</button>
+          <button type="button" name="button" onclick="deleteTask(this);" >&#10006;</button>
+		</td>
+      </tr>
+      <tr class="success">
+        <td><input type="checkbox" checked name="" value=""></td>
+        <td>Bread</td>
+        <td>2</td>
+		<td>
+          <button type="button" name="button">&#9997;</button>
+          <button type="button" name="button" onclick="deleteTask(this);" >&#10006;</button>
+    </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="" value=""></td>
+        <td>Eggs</td>
+        <td>1</td>
+		    <td>
+          <button type="button" name="button">&#9997;</button>
+          <button type="button" name="button" onclick="deleteTask(this);" >&#10006;</button>
+		    </td>
+      </tr> -->
+    </tbody>
+  </table>
+  <div>
+        <!-- Trigger the modal with a button -->
+    <button id="add-button" type="button" class="btn btn-primary btn-lg" data-toggle="modal"  title="Add product" data-target="#modalWindow">&#10133;</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalWindow" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">What do you need to buy?</h4>
+          </div>
+          <div class="modal-body">
+
+            <!-- Add product inputs -->
+            <form class="form-inline">
+              <div class="form-group">
+                <p>Product:</p>
+                <input type="text" value="" id="product-name" placeholder="Type product...">
+              </div>
+              <div class="form-group">
+                <p>Quantity:</p>
+                <input type="text" value="" id="product-qnt" placeholder="Type quantity..">
+              </div>
+            </form>
+
+
+          </div>
+          <div class="modal-footer">
+            <button onclick="addTask();" type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
